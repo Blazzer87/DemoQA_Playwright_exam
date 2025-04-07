@@ -30,3 +30,5 @@ playwright codegen --viewport-size=800,600 https://demoqa.com/text-box
 playwright codegen -o lesson.py https://demo.playwright.dev/todomvc/#/
 где -о или --output  - файл, в который будете сохранен записанный код
 
+playwright codegen https://192.168.100.17:4003 --ignore-https-errors
+где --ignore-https-errors позволяет запустить браузер не смотря на ошибки серта
