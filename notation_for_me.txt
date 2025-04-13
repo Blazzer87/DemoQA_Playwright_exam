@@ -1,21 +1,4 @@
-установить необходимые либы
-pip install pytest playwright pytest-playwright
 
-установить все браузеры
-playwright install
-
-Можно замедлить выполнение тестов для визуального отслеживания)
-browser = playwright.chromium.launch(headless=False, slow_mo=500)
-
-виды пауз, указывается в миллисекундах, то есть 5000 = 5 секунд
-page.wait_for_timeout(5000)
-page.pause(5000)
-
-Playwright позволяет ПРИ ОТКРЫТИИ СТРАНИЦЫ использовать различные опции для wait_until, такие как:
-• 'load': ждать полной загрузки страницы.
-• 'domcontentloaded': ждать, пока DOM будет полностью загружен, но ресурсы (например, изображения) могут еще загружаться.
-• 'networkidle': ждать, пока не будет активности сети (все запросы завершены).
-page.goto('https://example.com', wait_until='domcontentloaded')
 
 .click() - кликнуть
 .fill("и тут тоже какой то адрес") - ввести текст
